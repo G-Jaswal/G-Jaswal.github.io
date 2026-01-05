@@ -295,4 +295,8 @@ footer {
     .feature-grid {
         grid-template-columns: 1fr;
     }
+
+    .footer {
+        text-align: center;
+    }
 }
