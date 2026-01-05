@@ -1,0 +1,298 @@
+:root {
+    --primary-blue: #0066FF;
+    --secondary-blue: #00D4FF;
+    --dark: #333333;
+    --gray: #666666;
+    --white: #FFFFFF;
+    --light-bg: #FAFAFA;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--dark);
+}
+
+header {
+    background: var(--white);
+    padding: 20px 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1400px;
+    margin: 0px auto;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 42px;
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+nav a:hover {
+    color: var(--primary-blue);
+}
+
+.paradise {
+    background: linear-gradient(rgba(0, 102, 255, 0.5), rgba(0, 212, 255, 0.5)), url(images/island-homepage.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 120px 40px;
+    text-align: center;
+}
+
+.paradise h1 {
+    font-size: 64px;
+    margin-bottom: 25px;
+}
+
+.paradise p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--white);
+    color: var(--primary-blue);
+    padding: 18px 45px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0px auto;
+    padding: 80px 40px;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 22px;
+    color: var(--gray);
+    margin: 0px auto 60px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.cards-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--primary-blue);
+}
+
+.card p {
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.card-link {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.features {
+    background: var(--light-bg);
+    padding: 80px 40px;
+}
+
+.features-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--primary-blue);
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    color: var(--gray);
+}
+
+footer {
+    background: var(--dark);
+    color: var(--white);
+    padding: 40px;
+    text-align: right;
+}
+
+.lodging-paradise {
+    background: linear-gradient(rgba(0, 102, 255, 0.5), rgba(0, 212, 255, 0.5)), url(images/resort-hotel.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.lodging-paradise h2,
+.todo-paradise h2,
+.about-paradise h2,
+.dining-paradise h2,
+.transport-paradise h2,
+.faq-paradise h2 {
+    color: var(--white);
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lodging-paradise .intro-text,
+.todo-paradise .intro-text,
+.about-paradise .intro-text,
+.dining-paradise .intro-text,
+.transport-paradise .intro-text,
+.faq-paradise .intro-text {
+    color: var(--white);
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.info-box {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.info-box p {
+    color: var(--gray);
+}
+
+.todo-paradise {
+    background: linear-gradient(rgba(0, 102, 255, 0.5), rgba(0, 212, 255, 0.5)), url(images/hiking.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.extra-margin {
+    margin-top: 60px;
+}
+
+.about-paradise {
+    background: linear-gradient(rgba(0, 102, 255, 0.5), rgba(0, 212, 255, 0.5)), url(images/about-us.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 120px 40px;
+    text-align: center;
+}
+
+.dining-paradise {
+    background: linear-gradient(rgba(0, 102, 255, 0.5), rgba(0, 212, 255, 0.5)), url(images/tropical-dining.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.transport-paradise {
+    background: linear-gradient(rgba(0, 102, 255, 0.5), rgba(0, 212, 255, 0.5)), url(images/tropical-airport.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.faq-paradise {
+    background: linear-gradient(rgba(0, 102, 255, 0.5), rgba(0, 212, 255, 0.5)), url(images/tropical-information.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 80px 40px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+
+    nav a {
+        margin: 0px;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .cards,
+    .cards-2col,
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
